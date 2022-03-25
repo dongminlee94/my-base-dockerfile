@@ -29,9 +29,3 @@ $ docker run -it -d -p 8888:8888 --name=base-cpu base-cpu
 ```bash
 $ docker exec -it base-cpu /bin/bash
 ```
-
-### Docker inspect to know IP Address
-
-```bash
-$ docker inspect base-cpu | grep -i ipaddress
-```
