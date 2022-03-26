@@ -24,7 +24,7 @@ $ docker build -f docker/Dockerfile . -t base-cpu
 $ docker run -it -d -p 8888:8888 --name=base-cpu base-cpu
 ```
 
-### Docker exec
+### Docker Exec
 
 ```bash
 $ docker exec -it base-cpu /bin/bash
