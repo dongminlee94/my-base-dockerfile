@@ -31,6 +31,7 @@ USER user
 ENV HOME=/home/user
 RUN mkdir $HOME/.cache $HOME/.config \
  && chmod -R 777 $HOME
+WORKDIR $HOME
 
 # Install Miniconda and Python 3.8
 ENV CONDA_AUTO_UPDATE_CONDA=false
