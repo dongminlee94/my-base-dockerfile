@@ -30,7 +30,7 @@ $ docker run -it -d -p 8888:8888 --name=base-cpu base-cpu
 $ docker exec -it base-cpu /bin/bash
 ```
 
-### Docker inspect
+### Docker Inspect
 
 ```bash
 $ docker inspect base-cpu
