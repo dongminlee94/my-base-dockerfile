@@ -1,4 +1,4 @@
-# My Base Dockerfile
+# My Dockerfiles
 
 ## Requirements
 
@@ -15,7 +15,7 @@ $ make init
 ### Docker Build
 
 ```bash
-$ docker build -f docker/Dockerfile . -t base-cpu
+$ docker build -f docker/base/Dockerfile . -t base-cpu
 ```
 
 ### Docker Run
