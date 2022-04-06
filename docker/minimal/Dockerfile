@@ -3,7 +3,8 @@ FROM $BASE_CONTAINER
 
 LABEL maintainer="Dongmin Lee <kid33629@gmail.com>"
 
-RUN python -m pip --no-cache-dir install --upgrade --default-timeout=30 \
+# Install basic utilities for python3
+RUN python3 -m pip --no-cache-dir install --upgrade --default-timeout=30 \
     numpy \
     scipy \
     pandas \
@@ -19,3 +20,6 @@ RUN python -m pip --no-cache-dir install --upgrade --default-timeout=30 \
     s3fs \
     boto3 \
     Cython
+
+# Set the default command to python3
+CMD ["python3"]
