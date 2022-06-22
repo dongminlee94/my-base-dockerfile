@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=ghcr.io/dongminlee94/base-cpu:1.2
+ARG BASE_CONTAINER=ghcr.io/dongminlee94/base-gpu:1.0
 FROM $BASE_CONTAINER
 
 LABEL maintainer="Dongmin Lee <kid33629@gmail.com>"
