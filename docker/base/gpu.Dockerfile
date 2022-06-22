@@ -1,6 +1,8 @@
 FROM nvidia/cuda:11.1.1-base-ubuntu20.04
 ARG DEBIAN_FRONTEND=noninteractive
 
+LABEL maintainer="Dongmin Lee <kid33629@gmail.com>"
+
 # Change Updated NVIDIA KEY
 # Ref : https://forums.developer.nvidia.com/t/notice-cuda-linux-repository-key-rotation/212772
 RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
@@ -19,7 +21,10 @@ RUN apt-get update && apt-get install -y \
     make \
     wget \
     lshw \
- && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*
+
+# Create a working directory
+WORKDIR /root/workspace
 
 # Install Miniconda and Python 3.8
 ENV CONDA_AUTO_UPDATE_CONDA=false

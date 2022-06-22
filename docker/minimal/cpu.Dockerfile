@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=ghcr.io/dongminlee94/base-cpu:1.1
+ARG BASE_CONTAINER=ghcr.io/dongminlee94/base-cpu:1.2
 FROM $BASE_CONTAINER
 
 LABEL maintainer="Dongmin Lee <kid33629@gmail.com>"
@@ -20,6 +20,3 @@ RUN python3 -m pip --no-cache-dir install --upgrade --default-timeout=30 \
     s3fs \
     boto3 \
     Cython
-
-# Set the default command to python3
-CMD ["python3"]
