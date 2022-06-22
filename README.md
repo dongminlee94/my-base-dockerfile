@@ -15,13 +15,13 @@ $ make init
 ### Docker Build
 
 ```bash
-$ docker build -f docker/base/Dockerfile . -t base-cpu
+$ docker build -f docker/base/cpu.Dockerfile . -t base-cpu
 ```
 
 ### Docker Run
 
 ```bash
-$ docker run -it -d -p 8888:8888 --name=base-cpu base-cpu
+$ docker run -it -d -p 8000:8000 --name=base-cpu base-cpu
 ```
 
 ### Docker Exec
